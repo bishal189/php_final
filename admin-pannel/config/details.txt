@@ -1,0 +1,25 @@
+config 
+1.config.php
+   Three functions are made ie root , base and exit.
+   a.root 
+     path parameter is given in root which removes any slashes from the start and end of $path and then uses __FILE__ to get the current file's path. 
+     The root() function in this PHP code is used to generate the absolute file path to the root directory of the web application. 
+
+   b.base_url
+     returns the resulting URL.
+      
+   c. exit_url
+     similar to base_url(), but it returns a URL for a different part of the web application.
+     It concatenates these values with digital-assignment/ and $path to form the complete URL. Finally, it returns the resulting URL.   
+
+The root() function returns the absolute file path to the root directory of the application. 
+It is useful for ensuring that file path references within the application are consistent and accurate.
+
+The base_url() function returns a URL for a specified path within the "admin-pannel" directory of the application. 
+It is useful for generating links to pages within the admin panel of the application.
+
+The exit_url() function returns a URL for a specified path within the main directory of the application.
+It is useful for generating links to pages outside of the admin panel, such as the homepage of the application.
+
+2.db.php
+pdo= php data objects (extension that provides a consistent interface for accessing databases in PHP)
